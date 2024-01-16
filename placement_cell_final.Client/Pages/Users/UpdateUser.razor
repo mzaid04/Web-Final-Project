@@ -1,0 +1,114 @@
+﻿@page "/update-user/{userId:int}"
+@using placement_cell_final.Shared.Models;
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+
+<h3>Update User</h3>
+
+@if (user == null)
+{
+    <p>Loading user details...</p>
+}
+else
+{
+    <EditForm Model="@user" OnValidSubmit="@UpdateExisting">
+        <DataAnnotationsValidator />
+        @* <ValidationSummary /> *@
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <InputText id="name" @bind-Value="user.Name" class="form-control" />
+            <ValidationMessage For="@(() => user.Name)" />
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <InputText id="email" @bind-Value="user.Email" class="form-control" />
+            <ValidationMessage For="@(() => user.Email)" />
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <InputText id="password" @bind-Value="user.Password" type="password" class="form-control" />
+            <ValidationMessage For="@(() => user.Password)" />
+        </div>
+        <br />
+
+        <div class="form-group">
+            <label for="userType">User Type:</label>
+            <InputSelect id="userType" @bind-Value="user.Type" class="form-control">
+                <option value="">Select type ...</option>
+                <option value="student">Student</option>
+                <option value="company">Company</option>
+            </InputSelect>
+            <ValidationMessage For="@(() => user.Type)" />
+        </div>
+        <br />
+
+        <button type="submit" class="btn btn-primary">Save</button>
+    </EditForm>
+}
+
+
+
+@code {
+    private User? user;
+    private int userId;
+    [Parameter]
+    public int UserId
+    {
+        get => userId;
+        set
+        {
+            if (userId != value)
+            {
+                userId = value;
+                LoadUserDetails();
+            }
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadUserDetails();
+    }
+
+    private async Task LoadUserDetails()
+    {
+        try
+        {
+            user = await HttpClient.GetFromJsonAsync<User>($"https://localhost:7085/api/users/{userId}");
+            if (user == null)
+            {
+                // Handle the case where the user is not found
+                Console.WriteLine("User not found.");
+            }
+        }
+        catch (Exception ex)
+        {
+            // Handle exception
+            Console.WriteLine($"Exception: {ex.Message}");
+        }
+    }
+
+    private async Task UpdateExisting()
+    {
+        try
+        {
+            var response = await HttpClient.PutAsJsonAsync($"https://localhost:7085/api/users/{userId}", user);
+            response.EnsureSuccessStatusCode();
+
+            // Redirect to the user list page after successful update
+            NavigationManager.NavigateTo("/users");
+        }
+        catch (Exception ex)
+        {
+            // Handle exception
+            Console.WriteLine($"Exception: {ex.Message}");
+        }
+    }
+}
+
+

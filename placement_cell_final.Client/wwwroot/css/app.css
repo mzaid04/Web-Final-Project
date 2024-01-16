@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    outline: none;
+}
+
+
+
+
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+    .navbar img {
+        height: 50px;
+        width: 70px;
+    }
+
+.a-links {
+    padding: 10px;
+    margin-inline: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.join-btn {
+    border: 1.5px solid #2b3990;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    color: #2b3990;
+}
+
+.sign-up-btn {
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    padding: 5px 8px;
+    background-color: #2b3990;
+    border-radius: 6px;
+    color: white;
+    transition: 0.3s ease;
+    margin-left: 10px;
+}
+
+    .sign-up-btn:hover {
+        border: 1.5px solid #2b3990;
+        color: #2b3990;
+        background-color: white;
+    }
+
+.a-links:hover {
+    color: #2b3990;
+}
+
+.join-btn:hover {
+    border: 1.5px solid transparent;
+    background-color: #2b3990;
+    color: white;
+}
+
+
+.firstSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 80vh;
+}
+
+.firsttext {
+    width: 50%;
+}
+
+.firstSection img {
+    width: 500px;
+}
+
+.firstSection h2 {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 55px;
+    color: #2b3990;
+}
+
+.secondsection {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.secondtext {
+    width: 50%;
+}
+
+.secondimg img {
+    height: 350px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.secondsection h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.secondsection p {
+    font-size: 25px;
+    color: #373737;
+    font-weight: 300;
+}
+
+.thirdsection {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.thirdtext {
+    width: 50%;
+}
+
+.thirdimg img {
+    height: 350px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.thirdsection h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.thirdsection p {
+    font-size: 25px;
+    color: #373737;
+    font-weight: 300;
+}
+
+.fourthsection {
+    height: 20%;
+    background-color: #e8ebff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 70px;
+}
+
+    .fourthsection h2 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+.main-btn {
+    background-color: #2b3990;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 13px;
+    margin: 10px 0;
+    color: white;
+    border-radius: 15px;
+    border: 1.5px solid transparent;
+    transition: 0.3s ease;
+}
+
+    .main-btn:hover {
+        color: #2b3990;
+        border: 1.5px solid #2b3990;
+        background-color: #e8ebff;
+    }
+
+.findpeoplesection {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    .findpeoplesection img {
+        height: 200px;
+        width: 250px;
+        margin: 0 90px;
+    }
+
+.findpeople {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .findpeople h2 {
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+    }
+
+.sixthsection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sixth-img img {
+    height: 500px;
+    width: 500px;
+}
+
+.sixth-text {
+    width: 50%;
+}
+
+    .sixth-text h2 {
+        font-size: 35px;
+        padding-left: 100px;
+        color: #2b3990;
+    }
+
+    .sixth-text p {
+        font-size: 25px;
+        padding-left: 100px;
+        font-weight: 300;
+    }
+
+.seven-text {
+    padding: 50px 100px;
+    object-fit: fill;
+    object-position: center;
+    overflow: hidden;
+}
+
+.seven-section {
+    height: 100vh;
+}
+
+.seven-text h2 {
+    font-size: 45px;
+    font-weight: 300;
+}

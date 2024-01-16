@@ -1,0 +1,123 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+
+/* /Pages/Component.razor.rz.scp.css */
+
+*[b-3xuc48bi3i] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body[b-3xuc48bi3i] {
+    background: linear-gradient(45deg, #ce1e53, #8f00c7);
+    min-height: 100vh;
+}
+
+    body[b-3xuc48bi3i]::-webkit-scrollbar {
+        display: none;
+    }
+
+.wrapper[b-3xuc48bi3i] {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 30px 45px;
+    box-shadow: 5px 25px 35px #3535356b;
+}
+
+    .wrapper label[b-3xuc48bi3i] {
+        display: block;
+        padding-bottom: 0.2rem;
+    }
+
+    .wrapper .form .row[b-3xuc48bi3i] {
+        padding: 0.6rem 0;
+    }
+
+        .wrapper .form .row .form-control[b-3xuc48bi3i] {
+            box-shadow: none;
+        }
+
+    .wrapper .form .option[b-3xuc48bi3i] {
+        position: relative;
+        padding-left: 20px;
+        cursor: pointer;
+    }
+
+
+        .wrapper .form .option input[b-3xuc48bi3i] {
+            opacity: 0;
+        }
+
+    .wrapper .form .checkmark[b-3xuc48bi3i] {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #bbb;
+        border-radius: 50%;
+    }
+
+    .wrapper .form .option input:checked ~ .checkmark[b-3xuc48bi3i]:after {
+        display: block;
+    }
+
+    .wrapper .form .option:hover .checkmark[b-3xuc48bi3i] {
+        background: #f3f3f3;
+    }
+
+    .wrapper .form .option .checkmark[b-3xuc48bi3i]:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: linear-gradient(45deg, #ce1e53, #8f00c7);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 300ms ease-in-out 0s;
+    }
+
+    .wrapper .form .option input[type="radio"]:checked ~ .checkmark[b-3xuc48bi3i] {
+        background: #fff;
+        transition: 300ms ease-in-out 0s;
+    }
+
+        .wrapper .form .option input[type="radio"]:checked ~ .checkmark[b-3xuc48bi3i]:after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+#sub[b-3xuc48bi3i] {
+    display: block;
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+    #sub:focus[b-3xuc48bi3i] {
+        outline: none;
+    }
+
+@media(max-width: 768.5px) {
+    .wrapper[b-3xuc48bi3i] {
+        margin: 30px;
+    }
+
+        .wrapper .form .row[b-3xuc48bi3i] {
+            padding: 0;
+        }
+}
+
+@media(max-width: 400px) {
+    .wrapper[b-3xuc48bi3i] {
+        padding: 25px;
+        margin: 20px;
+    }
+}
+/* /Pages/ContactUs.razor.rz.scp.css */
+

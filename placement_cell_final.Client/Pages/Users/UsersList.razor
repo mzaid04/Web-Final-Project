@@ -1,0 +1,108 @@
+﻿@page "/users"
+@using placement_cell_final.Shared.Models;
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+
+<h3>Users List</h3>
+
+@if (users == null)
+{
+    <p>Loading users...</p>
+}
+else if (users.Count == 0)
+{
+    <p>No users available.</p>
+}
+else
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in users)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td>@user.Type</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => UpdateUser(user.Id)">
+                            <i class="fas fa-edit"></i> Edit
+                        </button>
+                        <button class="btn btn-danger" @onclick="() => DeleteUser(user.Id)">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private List<User>? users = new List<User>();
+    private int userIdToDelete;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Initialize the user list when the component is initialized
+        await LoadUserList();
+    }
+
+    private async Task LoadUserList()
+    {
+        try
+        {
+            // Make a GET request to retrieve the list of users
+            users = await HttpClient.GetFromJsonAsync<List<User>>("https://localhost:7085/api/users");
+        }
+        catch (Exception ex)
+        {
+            // Handle exception
+            Console.WriteLine($"Exception: {ex.Message}");
+        }
+    }
+
+    private void UpdateUser(int userId)
+    {
+        NavigationManager.NavigateTo($"/update-user/{userId}");
+    }
+    private async Task DeleteUser(int userId)
+    {
+        userIdToDelete = userId;
+
+        // Use JavaScript interop to show the browser's built-in confirmation dialog
+        bool confirmed = await JSRuntime.InvokeAsync<bool>("confirm", "Are you sure you want to delete this user?");
+        if (confirmed)
+        {
+            await PerformDelete();
+        }
+    }
+
+    private async Task PerformDelete()
+    {
+        try
+        {
+            var response = await HttpClient.DeleteAsync($"https://localhost:7085/api/users/{userIdToDelete}");
+            response.EnsureSuccessStatusCode();
+
+            // Reload user list after successful deletion
+            await LoadUserList();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception: {ex.Message}");
+        }
+    }
+
+}

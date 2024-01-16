@@ -1,0 +1,53 @@
+@page "/placement/{placementId:int}"
+@using placement_cell_final.Shared.Models
+@using placement_cell_final.Shared.ModelsDTO
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+
+
+<div class="flex items-center justify-center flex-col pt-24">
+    <h3 class="text-2xl font-semibold mb-4 "><strong>@placement.Title</strong> </h3>
+    <h5 class="text-md font-semibold mb-4"><strong class="text-xl">Description:</strong> @placement.Description</h5>
+</div>
+<div class=" flex items-center justify-center pt-10 ">
+    <EditForm Model="@PlacementApplicationObj" class="max-w-xl w-full p-10 shadow-md ">
+        <h3 class="font-bold text-2xl pb-3">Placement Application</h3>
+        <div class="mb-4">
+            <label for="description" class="block text-gray-700 text-sm font-bold mb-2">Description:</label>
+            <InputTextArea @bind-Value="@PlacementApplicationObj.Description" id="description" class="w-full border rounded py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" />
+        </div>
+
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Submit Application</button>
+    </EditForm>
+</div>
+
+@code {
+
+    [Parameter]
+    public int placementId { get; set; }
+    public Placement? placement = new Placement();
+    public PlacementApplicationDTO PlacementApplicationObj = new PlacementApplicationDTO();
+    public async void SUbmitPlacementApplication()
+    {
+        var response = await HttpClient.PostAsJsonAsync(Statics.BaseApiAddress + "/api/placements",
+        new PlacementApplicationDTO { Description = PlacementApplicationObj.Description, PlacementId = placementId });
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            placement = await HttpClient.GetFromJsonAsync<Placement>(Statics.BaseApiAddress + "/api/placements/" + placementId);
+            Console.WriteLine(placement);
+            StateHasChanged();
+
+        }
+        catch (Exception ex)
+        {
+
+            Console.WriteLine($"Exception: {ex.Message}");
+        }
+
+    }
+}

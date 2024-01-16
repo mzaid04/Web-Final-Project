@@ -1,0 +1,129 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\obj\\Debug\\net8.0\\compressed\\pbo2cgzqva.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\placement_cell_final.Client.styles.css",
+      "PackagePath": "staticwebassets\\placement_cell_final.Client.styles.css"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\css\\app.output.css",
+      "PackagePath": "staticwebassets\\css\\app.output.css"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\1639515333881.png",
+      "PackagePath": "staticwebassets\\media\\images\\1639515333881.png"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\2807611.jpg",
+      "PackagePath": "staticwebassets\\media\\images\\2807611.jpg"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\6976181.jpg",
+      "PackagePath": "staticwebassets\\media\\images\\6976181.jpg"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\Elsevier-collab-image.jpg",
+      "PackagePath": "staticwebassets\\media\\images\\Elsevier-collab-image.jpg"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\dxf91zhqd2z6b0bwg85ktm5s4.svg",
+      "PackagePath": "staticwebassets\\media\\images\\dxf91zhqd2z6b0bwg85ktm5s4.svg"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\formbg.png",
+      "PackagePath": "staticwebassets\\media\\images\\formbg.png"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\hiring.png",
+      "PackagePath": "staticwebassets\\media\\images\\hiring.png"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\home-bg-img.png",
+      "PackagePath": "staticwebassets\\media\\images\\home-bg-img.png"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\img1.svg",
+      "PackagePath": "staticwebassets\\media\\images\\img1.svg"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\img2svg.svg",
+      "PackagePath": "staticwebassets\\media\\images\\img2svg.svg"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\microsoft.png",
+      "PackagePath": "staticwebassets\\media\\images\\microsoft.png"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\placement_logo.png",
+      "PackagePath": "staticwebassets\\media\\images\\placement_logo.png"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\pngtree-sharing-economy-collaborative-economy-business-model-png-image_6699990.jpg",
+      "PackagePath": "staticwebassets\\media\\images\\pngtree-sharing-economy-collaborative-economy-business-model-png-image_6699990.jpg"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\search-page-vector.svg",
+      "PackagePath": "staticwebassets\\media\\images\\search-page-vector.svg"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\sixth.avif",
+      "PackagePath": "staticwebassets\\media\\images\\sixth.avif"
+    },
+    {
+      "Id": "F:\\uni\\Web Engineering\\placement_cell_final\\placement_cell_final.Client\\wwwroot\\media\\images\\welcome-3688628-3231459.png",
+      "PackagePath": "staticwebassets\\media\\images\\welcome-3688628-3231459.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.placement_cell_final.Client.props",
+      "PackagePath": "build\\placement_cell_final.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.placement_cell_final.Client.props",
+      "PackagePath": "buildMultiTargeting\\placement_cell_final.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.placement_cell_final.Client.props",
+      "PackagePath": "buildTransitive\\placement_cell_final.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.placement_cell_final.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

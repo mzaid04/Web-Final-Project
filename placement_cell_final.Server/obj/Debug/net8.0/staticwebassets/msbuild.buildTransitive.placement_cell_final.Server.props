@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\placement_cell_final.Server.props" />
+</Project>

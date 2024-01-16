@@ -1,0 +1,127 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = placement_cell_final.Client
+build_property.RootNamespace = placement_cell_final.Client
+build_property.ProjectDir = D:\FFF\placement_cell_final\placement_cell_final.Client\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\FFF\placement_cell_final\placement_cell_final.Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGb290ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/Header.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/JobsCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xKb2JzQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/LoginForm/LoginFormLeftSide.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2dpbkZvcm1cTG9naW5Gb3JtTGVmdFNpZGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/LoginForm/LoginFormPartial.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2dpbkZvcm1cTG9naW5Gb3JtUGFydGlhbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/LoginForm/LoginFormRightSide.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2dpbkZvcm1cTG9naW5Gb3JtUmlnaHRTaWRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/Search/SearchJobs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWFyY2hcU2VhcmNoSm9icy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/Search/SearchPeople.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTZWFyY2hcU2VhcmNoUGVvcGxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/SignUpForm/SignupFormLeftSide.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaWduVXBGb3JtXFNpZ251cEZvcm1MZWZ0U2lkZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Components/SignUpForm/SignupFormPartial.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaWduVXBGb3JtXFNpZ251cEZvcm1QYXJ0aWFsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Jobs/AddJob.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9ic1xBZGRKb2IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Jobs/Job.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9ic1xKb2IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Jobs/Jobs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSm9ic1xKb2JzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/LoginForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5Gb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/People.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGVvcGxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/SignUp.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Users/AddUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQWRkVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Users/UpdateUser.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXBkYXRlVXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Users/UsersList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcVXNlcnNMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-11yv6il1qv
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/Component.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-3xuc48bi3i
+
+[D:/FFF/placement_cell_final/placement_cell_final.Client/Pages/ContactUs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdFVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-646pqra58h

@@ -1,0 +1,12 @@
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\bin\Debug\net8.0\placement_cell_final.Shared.deps.json
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\bin\Debug\net8.0\placement_cell_final.Shared.dll
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\bin\Debug\net8.0\placement_cell_final.Shared.pdb
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\placement_cell_final.Shared.csproj.AssemblyReference.cache
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\placement_cell_final.Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\placement_cell_final.Shared.AssemblyInfoInputs.cache
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\placement_cell_final.Shared.AssemblyInfo.cs
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\placement_cell_final.Shared.csproj.CoreCompileInputs.cache
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\placement_cell_final.Shared.dll
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\refint\placement_cell_final.Shared.dll
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\placement_cell_final.Shared.pdb
+F:\uni\Web Engineering\placement_cell_final\placement_cell_final.Shared\obj\Debug\net8.0\ref\placement_cell_final.Shared.dll

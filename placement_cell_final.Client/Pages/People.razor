@@ -1,0 +1,79 @@
+@page "/people"
+@using placement_cell_final.Client.Components.Search;
+@using placement_cell_final.Client.Components;
+
+
+
+<div class="flex justify-center flex-col items-center px-3">
+
+    <div class="flex justify-center mt-5 rounded-[4px] max-w-[800px] w-full flex-col-reverse sm:flex-row sm:bg-[#e4e9ee]">
+
+        <div class="flex items-stretch w-24 relative duration-200 cursor-pointer  rounded-[4px] sm:rounded-0 mt-2 sm:mt-0 bg-[#e4e9ee] @Overflow"
+             @onclick="@SwitchClass">
+
+            <div class="flex items-center w-full rounded-l-[4px] hover:bg-[#c3c8cc] px-3 py-1">
+                <span class="text-lg w-full text-[#333434] font-semibold">
+                    @SetText
+                </span>
+
+                <i class="fa-solid fa-caret-down text-[#333434]"></i>
+            </div>
+
+            <div class="flex flex-col bg-white duration-300 absolute top-10 left-0 w-full cursor-pointer border-[#404040d2] border-2 rounded-[4px] shadow-md @Height">
+                <span class="w-full px-3 duration-100 hover:bg-slate-400" @onclick="@(()=>SetButton("People"))">
+                    People
+                </span>
+                <span class=" w-full px-3 duration-100 hover:bg-slate-400" @onclick="@(()=>SetButton("Jobs"))">
+                    Jobs
+                </span>
+            </div>
+
+        </div>
+
+        @if (SetText == "People")
+        {
+            <SearchPeople />
+        }
+        else if (SetText == "Jobs")
+        {
+            <SearchJobs />
+        }
+
+    </div>
+
+
+    <img src="/media/images/search-page-vector.svg" class="h-60 mt-16 sm:mt-32" />
+    <h2 class="text-center text-xl mt-7 sm:text-2xl sm:mt-10 ">
+        Try searching for your co-worker, classmate, professor, or friend.
+    </h2>
+
+</div>
+
+@code {
+    public bool state { get; set; } = true;
+    public string Height { get; set; } = "max-h-0";
+    public string Overflow { get; set; } = "overflow-hidden";
+    public string SetText { get; set; } = "People";
+
+    public void SetButton(string text)
+    {
+        SetText = text;
+    }
+    public void SwitchClass(EventArgs e)
+    {
+
+        if (state)
+        {
+            state = false;
+            Overflow = "overflow-visible";
+            Height = "max-h-96";
+        }
+        else
+        {
+            Overflow = "overflow-hidden";
+            state = true;
+            Height = "max-h-0";
+        }
+
+    }
+}

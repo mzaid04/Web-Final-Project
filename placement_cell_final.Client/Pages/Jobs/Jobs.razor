@@ -1,0 +1,43 @@
+@page "/jobs";
+@using placement_cell_final.Client.Components;
+@inject HttpClient HttpClient
+@inject NavigationManager NavigationManager
+@using placement_cell_final.Shared.Models
+@using placement_cell_final.Shared.ModelsDTO;
+ 
+<div class="flex items-center flex-wrap gap-x-6 gap-y-10 justify-center px-7 sm:px-16 2xl:px-32">
+    @foreach (Placement Placement in Placementslists)
+    {
+        <JobsCard Placement="@Placement" />
+    }
+
+</div>
+
+
+
+@code {
+    public List<Placement> Placementslists = new List<Placement>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Initialize the user list when the component is initialized
+        await JobsDetailList();
+    }
+
+    private async Task JobsDetailList()
+    {
+        try
+        {
+
+            // Make a GET request to retrieve the list of users
+            Placementslists = await HttpClient.GetFromJsonAsync<List<Placement>>(Statics.BaseApiAddress + "/api/placements");
+            Console.WriteLine(Placementslists);
+        }
+        catch (Exception ex)
+        {
+            // Handle exception
+            Console.WriteLine($"Exception: {ex.Message}");
+        }
+    }
+
+}

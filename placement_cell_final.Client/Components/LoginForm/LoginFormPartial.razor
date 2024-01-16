@@ -1,0 +1,30 @@
+<form class="w-[calc(100%_-_40px)] flex flex-col items-center mt-7 max-w-[400px]">
+    @* <p class="text-[red] text-[14px]">{errs?.Invalid} </p> *@
+    <div class="flex flex-col w-full gap-2 mb-2 sm:mb-10">
+        <div class="flex justify-between items-center">
+            <label htmlFor="email" class="xs:text-[18px] sm:text-[20px]">
+                Email
+            </label>
+            @* <p class="text-[red] text-[13px]">{errors.email}</p> *@
+        </div>
+        <input type="text" id="email" 
+            class="drop-shadow-md text-[16px] sm:text-[18px] px-2 py-2 rounded-[4px]"
+            placeholder="abc@gmail.com" />
+    </div>
+
+    <div class="flex flex-col gap-2 w-full">
+        <div class="flex justify-between items-center">
+            <label htmlFor="password" class="xs:text-[18px] sm:text-[20px]">
+                Password
+            </label>
+            @* <p class="text-[red] text-[13px]">{errors.password}</p> *@
+        </div>
+        <input type="password" id="password" 
+            class="drop-shadow-md text-[16px]  sm:text-[18px] px-2 py-2 rounded-[4px]" placeholder="********" />
+    </div>
+
+    <button type="submit"
+        class="w-full xl:text-lg  min-w-[200px] bg-[#2b3990] font-semibold text-white rounded-full text-[16px] sm:text-[17px] py-2 sm:py-3 mt-7 justify-center flex mx-auto sm:mt-9 hover:bg-transparent hover:text-[#2b3990] hover:border-2 hover:border-[#2b3990] hover:shadow-md hover:-translate-y-1 hover:translate-x-[2px] transition-transform active:translate-y-1 active:-translate-x-[2px]">
+        Login
+    </button>
+</form>

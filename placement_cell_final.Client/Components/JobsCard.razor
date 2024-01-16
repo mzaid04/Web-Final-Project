@@ -1,0 +1,38 @@
+@using placement_cell_final.Client.ClassModels;
+@using placement_cell_final.Shared.Models
+@using placement_cell_final.Shared.ModelsDTO
+<NavLink  href="@NextPageURL()" class="flex cursor-pointer bg-gray-200 duration-200 w-full max-w-lg hover:bg-slate-400 rounded-lg py-3">
+    <div class="w-1/5">
+        <img src="/media/images/microsoft.png" alt="" class="w-[300%]">
+    </div>
+    <div class="w-4/5 flex flex-col">
+        <NavLink href="@NextPageURL()" class="cursor-pointer hover:underline text-xl font-semibold text-[#171819] mb-2">
+            @Placement.Title
+        </NavLink>
+
+        <span class="text-[#171819]">
+            @Placement.CompanyName
+        </span>
+
+        <span class="text-[#535455] text-sm">
+            @Placement.Location
+
+        </span>
+
+        <span class="text-[#535455] text-sm">
+            @Placement.CreatedDate
+        </span>
+    </div>
+</NavLink>
+
+@code {
+
+    [Parameter]
+    public Placement Placement { get; set; } = new Placement();
+
+
+    public string NextPageURL()
+    {
+        return "/placement/" + Placement.Id;
+    }
+}
